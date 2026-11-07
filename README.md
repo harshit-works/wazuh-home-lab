@@ -38,4 +38,4 @@ The full record of what broke and how I fixed it is in
 
 ## Next
 Attack the Windows VM from Kali, find the activity in Wazuh, and write detection
-rules and case studies.
+rules and case studies
