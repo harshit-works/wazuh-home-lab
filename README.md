@@ -31,7 +31,7 @@ flowchart LR
 |---|---|---|---|
 | 100100 | PowerShell process execution | T1059.001 | ✅ Working |
 | 100101 | Suspicious PowerShell arguments (-enc, hidden window) | T1059.001 | ✅ Working |
-| 100102 | Execution from a temp folder | T1204 | 🔄 Testing |
+| 100102 | Execution from a temp folder | T1204 | ✅ Working |
 | Planned | SSH brute force, Windows brute force, masquerading, persistence, new user, file integrity | T1110, T1036, T1547, T1136 | ⬜ |
 
 ## 🧪 Test results
