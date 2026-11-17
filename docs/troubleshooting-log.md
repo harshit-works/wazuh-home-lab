@@ -20,3 +20,14 @@ from Sysmon appeared in the dashboard.
 - An Active agent doesn't prove a specific log channel is being forwarded.
 
 **Resolution:** <fill in once fixed>
+
+## Issue 2: Locked out of the Wazuh dashboard
+Symptom: the dashboard rejected the admin login.
+Cause: the original admin password was not available, and the first reset attempt
+left the indexer unable to read a folder created by root.
+Fix: restored the folder permissions, loaded the new admin credentials into the
+indexer's security configuration, restarted the dashboard, and checked that Filebeat
+could still send alerts to the indexer.
+Lessons: Wazuh config folders need sudo; copy long commands instead of typing them;
+quote passwords that contain special characters; after a password change, verify
+every component that uses it, not just the login page.
