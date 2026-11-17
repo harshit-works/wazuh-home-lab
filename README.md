@@ -40,6 +40,7 @@ flowchart LR
 |---|---|---|---|
 | Hidden PowerShell with encoded-style arguments | Yes | <seconds> | Rule 100101 |
 | Plain PowerShell launch | Yes | <seconds> | Rule 100100 |
+| Execution from a temp folder | Yes | <seconds> | Rule 100102 |
 
 ## 🖼️ Evidence
 
