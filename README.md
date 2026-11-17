@@ -42,13 +42,6 @@ flowchart LR
 | Plain PowerShell launch | Yes | <seconds> | Rule 100100 |
 | Execution from a temp folder | Yes | <seconds> | Rule 100102 |
 
-## 🖼️ Evidence
-
-![Agent active](images/agent-active.png)
-*Windows agent connected to the manager.*
-
-![Failed logins](images/failed-logins-4625.png)
-*Event ID 4625 failed logons from the Windows VM.*
 
 ## 🔧 Troubleshooting highlights
 - Sysmon events never arrived because the agent had not loaded the Sysmon channel. Found by reading the agent log, fixed by re-adding the config block.
